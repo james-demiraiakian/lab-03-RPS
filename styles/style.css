@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-items: center;
+}
+
+#choice {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+input[type=radio]:checked + img {
+    border: 5px solid rgb(31, 165, 243);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
