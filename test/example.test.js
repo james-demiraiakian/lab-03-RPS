@@ -1,6 +1,6 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
-import { didUserWin } from "./didUserWin.js";
+import { didUserWin } from '../get-random-throw.js';
 
 const test = QUnit.test;
 

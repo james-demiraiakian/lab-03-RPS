@@ -5,8 +5,8 @@ describe('Example Test', ()=>{
     });
 
     describe('HTML elements', ()=>{   
-        it('contains the alchemy logo', ()=>{
-            cy.get('.main-logo').should('be.visible');
+        it('body tag', ()=>{
+            cy.get('body').should('be.visible');
         });
     });
 });
