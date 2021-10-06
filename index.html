@@ -18,7 +18,9 @@
             Rock Paper Scissors
         </h1>
         <p>
-            Make a selection of either rock, paper, or scissors. The computer will also make a selection. See how many times you can win!
+            Make a selection of either rock, paper, or scissors.
+            <br>The computer will also make a selection.
+            <br>See how many times you can win!
         </p>
         <p>Possible outcomes:</p>
         <ul>
@@ -33,10 +35,35 @@
 
     </header>
     <main>
-        
+        <span id="choice">
+            <label>
+                <input type="radio" name="rps" id="rock">
+                <img src="" alt="">
+            </label>
+            <label>
+                <input type="radio" name="rps" id="paper">
+                <img src="" alt="">
+            </label>
+            <label>
+                <input type="radio" name="rps" id="scissors">
+                <img src="" alt="">
+            </label>
+        </span>
+        <div id="buttons">
+            <button id="play">Play</button>
+            <button id="reset">Reset</button>
+        </div>
     </main>
     <footer>
-        
+        <div id="result">
+            <span id="resultSpan"></span>
+        </div>
+        <div id="stats">
+            <span id="wins"></span>
+            <span id="losses"></span>
+            <span id="draws"></span>
+            <span id="resets"></span>
+        </div>
     </footer>
 
     <script type="module" src="./app.js"></script>
