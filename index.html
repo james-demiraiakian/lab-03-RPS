@@ -37,22 +37,26 @@
     <main>
         <span id="choice">
             <label>
-                <input type="radio" name="rps" id="rock">
-                <img src="./assets/rock.jpg" alt="rock" width="200px" height="200px">
+                <input type="radio" name="rps" id="rock" value="rock">
+                <p>rock</p>
+                <!-- <img src="./assets/rock.jpg" alt="rock" width="200px" height="200px"> -->
             </label>
             <label>
-                <input type="radio" name="rps" id="paper">
-                <img src="./assets/paper.jpg" alt="paper" width="200px" height="200px">
+                <input type="radio" name="rps" id="paper" value="paper">
+                <p>paper</p>
+                <!-- <img src="./assets/paper.jpg" alt="paper" width="200px" height="200px"> -->
             </label>
             <label>
-                <input type="radio" name="rps" id="scissors">
-                <img src="./assets/scissors.jpg" alt="scissors" width="200px" height="200px">
+                <input type="radio" name="rps" id="scissors" value="scissors">
+                <p>scissors</p>
+                <!-- <img src="./assets/scissors.jpg" alt="scissors" width="200px" height="200px"> -->
             </label>
         </span>
         <div id="buttons">
             <button id="play">Play</button>
             <button id="reset">Reset</button>
         </div>
+        <span id="error" class="hidden">Please select an option</span>
     </main>
     <footer>
         <div id="result">
