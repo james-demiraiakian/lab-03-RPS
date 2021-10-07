@@ -30,8 +30,31 @@ play.addEventListener('click', () => {
     const computerChoice = getRandomThrow();
 
     if (didUserWin(playerChoice, computerChoice) === 'win') {
-        wins++;
-        
+        winCount++;
+        result.textContent = 'You Won!';
+    } else
+    if (didUserWin(playerChoice, computerChoice) === 'lose') {
+        lossCount++;
+        result.textContent = 'You Lost!';  
+    } else
+    if (didUserWin(playerChoice, computerChoice) === 'draw') {
+        drawCount++;
+        result.textContent = 'You Tied!';
     }
-
+    wins.textContent = `You have ${winCount} wins!`;
+    losses.textContent = `You have ${lossCount} losses!`;
+    draws.textContent = `You have ${drawCount} draws!`;
 });
+
+reset.addEventListener('click', () => {
+    winCount = 0;
+    lossCount = 0;
+    drawCount = 0;
+    wins.textContent = 'You have 0 wins!';
+    losses.textContent = 'You have 0 losses!';
+    draws.textContent = 'You have 0 draws!';
+    resetCount++;
+    resets.textContent = `You have reset ${resetCount} times...`;
+    resets.classList.remove('hidden');
+});
+
