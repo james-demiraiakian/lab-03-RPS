@@ -3,6 +3,24 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    background-image: url('../assets/background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    font-size: 1.4rem;
+    margin: 4%;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+li {
+    list-style-type: disc;
+    margin-left: 30px;
+    font-size: 1.2rem;
 }
 
 main {
@@ -17,9 +35,14 @@ main {
     flex-direction: column;
 }
 
-/* input[type=radio] {
+#stats {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=radio] {
     display: none;
-} */
+}
 
 input[type=radio]:checked + img {
     border: 5px solid rgb(31, 165, 243);
@@ -29,4 +52,12 @@ footer {
     display: flex;
     flex-direction: column;
     width: 30%;
+}
+
+buttons {
+    border-radius: 10px;
+}
+
+.hidden {
+    display: none;
 }

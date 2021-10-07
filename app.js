@@ -15,9 +15,6 @@ let lossCount = 0;
 let drawCount = 0;
 let resetCount = 0;
 
-console.log(getRandomThrow());
-//console.log(playerChoice);
-
 play.addEventListener('click', () => {
     const player = document.querySelector('input[type=radio]:checked');
 
@@ -57,4 +54,3 @@ reset.addEventListener('click', () => {
     resets.textContent = `You have reset ${resetCount} times...`;
     resets.classList.remove('hidden');
 });
-
