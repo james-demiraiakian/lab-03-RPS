@@ -13,59 +13,61 @@
 </head>
 
 <body>
-    <header>
-        <h1>
-            Rock Paper Scissors
-        </h1>
-        <p>
-            Make a selection of either rock, paper, or scissors.
-            <br>The computer will also make a selection.
-            <br>See how many times you can win!
-        </p>
-        <p>Possible outcomes:</p>
-        <ul>
-            <li>Rock beats Scissors</li>
-            <li>Scissors beats Paper</li>
-            <li>Paper beats Rock</li>
-            <li>Same choice is a tie</li>
-        </ul>
-        <p>
-            Good Luck!
-        </p>
+    <container>
+        <header>
+            <h1>
+                Rock Paper Scissors
+            </h1>
+            <p>
+                Make a selection of either rock, paper, or scissors.
+                <br>The computer will also make a selection.
+                <br>See how many times you can win!
+            </p>
+            <p>Possible outcomes:</p>
+            <ul>
+                <li>Rock beats Scissors</li>
+                <li>Scissors beats Paper</li>
+                <li>Paper beats Rock</li>
+                <li>Same choice is a tie</li>
+            </ul>
+            <p>
+                Good Luck!
+            </p>
 
-    </header>
-    <main>
-        <span id="choice">
-            <label>
-                <input type="radio" name="rps" id="rock" value="rock">
-                <img src="./assets/rock.jpg" alt="rock" width="200px" height="200px">
-            </label>
-            <label>
-                <input type="radio" name="rps" id="paper" value="paper">
-                <img src="./assets/paper.jpg" alt="paper" width="200px" height="200px">
-            </label>
-            <label>
-                <input type="radio" name="rps" id="scissors" value="scissors">
-                <img src="./assets/scissors.jpg" alt="scissors" width="200px" height="200px">
-            </label>
-        </span>
-        <div id="buttons">
-            <button id="play">Play</button>
-            <button id="reset">Reset</button>
-        </div>
-        <span id="error" class="hidden">Please select an option</span>
-    </main>
-    <footer>
-        <div id="result">
-            <span id="resultSpan">results</span>
-        </div>
-        <div id="stats">
-            <span id="wins">You have 0 wins!</span>
-            <span id="losses">You have 0 losses!</span>
-            <span id="draws">You have 0 draws!</span>
-            <span id="resets" class="hidden"></span>
-        </div>
-    </footer>
+        </header>
+        <main>
+            <span id="choice">
+                <label>
+                    <input type="radio" name="rps" id="rock" value="rock">
+                    <img src="./assets/rock.jpg" alt="rock" width="200px" height="200px">
+                </label>
+                <label>
+                    <input type="radio" name="rps" id="paper" value="paper">
+                    <img src="./assets/paper.jpg" alt="paper" width="200px" height="200px">
+                </label>
+                <label>
+                    <input type="radio" name="rps" id="scissors" value="scissors">
+                    <img src="./assets/scissors.jpg" alt="scissors" width="200px" height="200px">
+                </label>
+            </span>
+            <div id="buttons">
+                <button id="play">Play</button>
+                <button id="reset">Reset</button>
+            </div>
+            <span id="error" class="hidden">Please select an option</span>
+        </main>
+        <footer>
+            <div id="result">
+                <span id="resultSpan">results</span>
+            </div>
+            <div id="stats">
+                <span id="wins">You have 0 wins!</span>
+                <span id="losses">You have 0 losses!</span>
+                <span id="draws">You have 0 draws!</span>
+                <span id="resets" class="hidden"></span>
+            </div>
+        </footer>
+    </container>
     <script type="module" src="./app.js"></script>
 </body>
 

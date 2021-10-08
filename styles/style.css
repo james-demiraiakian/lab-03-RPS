@@ -1,16 +1,22 @@
 body {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
+    display:flex;
+    justify-content: center;
     background-image: url('../assets/background.png');
     background-position: center;
     background-repeat: no-repeat;
 }
 
+container { 
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
 header {
+    border: 2px solid black;
     font-size: 1.4rem;
-    margin: 4%;
 }
 
 h1 {
@@ -26,7 +32,7 @@ li {
 main {
     display: flex;
     flex-direction: column;
-    width: 30%;
+
     align-items: center;
 }
 
@@ -35,9 +41,11 @@ main {
     flex-direction: column;
 }
 
-#stats {
+#stats, #result {
     display: flex;
     flex-direction: column;
+    font-size:1.5rem;
+    text-align:center;
 }
 
 input[type=radio] {
@@ -49,12 +57,13 @@ input[type=radio]:checked + img {
 }
 
 footer {
+    border: 2px solid black;
     display: flex;
     flex-direction: column;
-    width: 30%;
+    position:relative;
 }
 
-buttons {
+button {
     border-radius: 10px;
 }
 
